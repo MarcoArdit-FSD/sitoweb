@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Inizio effetto della barra di scorrimento */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,#80f0ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,#0d6f7c);
+}
+
+/* Fine effetto della barra di scorrimento */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins",sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(128,240,255,1) 0%, rgba(153,245,255,1) 18%, rgba(170,248,255,1) 26%, rgba(194,248,255,1) 35%, rgba(203,251,255,1) 61%, rgba(206,251,255,1) 100%);
+  flex-wrap: wrap;
+}
+
+/* Inizio Navbar */
+
+.navbar{
+  box-shadow: 0 2px 8px rgba(75, 145, 153, 100);
+}
+
+.navbar .container .navbar-brand {
+  color: #075057;
+}
+
+.navbar .container .navbar-nav .nav-item a{
+  color: rgba(75, 145, 153, 100);
+  transition: color 0.3s ease;
+}
+
+.navbar .container .navbar-nav .nav-item a:hover {
+ color: #075057;
+}
+
+
+/* Fine Navbar */
+
+/* Inizio Portfolio */
+
+section .container .row {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+section .container .col {
+  top:-120px;
+}
+
+section .container .row .col p {
+  font-size: 30px;
+  color: #075057;
+  padding-bottom: 5px;
+}
+
+section .container .row .col h3 strong {
+  font-size: 50px;
+  color: #0d6f7c;
+}
+
+.line {
+  position: absolute;
+  padding-top: 420px;
+  color: #0d6f7c;
+}
+
+/* Fine Portfolio */
+
+/* Inizio SOFT SKILLS */
+
+.text-softskills {
+  padding: 100px;
+  position: relative;
+  text-align: center;
+  color: #0d6f7c;
+}
+
+.content h3 strong {
+  color: #0d6f7c;
+  font-size: 2em;
+}
+
+section .box {
+  position: relative;
+  max-width: 290px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d8fcff;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px rgba(75, 145, 153, 100);
+}
+
+section .container .box .content {
+  position: relative;
+  padding: 10px 15px;
+  text-align: center;
+  color: black;
+}
+
+section .container .box .content h2 {
+  padding-bottom: 20px;
+  color: #023539;
+}
+
+section .container .box .content h3 {
+  padding-bottom: 30px;
+}
+
+/* Fine SOFT SKILLS */
+
+/* Inizio HARD SKILLS */
+
+.text-hardskills {
+  padding: 100px;
+  position: relative;
+  text-align: center;
+  color: #0d6f7c;
+}
+
+section .container .card .content h2 {
+  color: #023539;
+}
+
+.content p strong {
+  color: #0d6f7c;
+  font-size: 1.3em;
+}
+
+section .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 190px;
+  background: #d8fcff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+  height: 400px;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -40px;
+  z-index: 1;
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/* Fine HARD SKILLS */
+
+/* Inizio EXPERIENCE */
+
+.text-experience {
+  padding: 100px;
+  position: relative;
+  text-align: center;
+  color: #0d6f7c;
+}
+
+section .text-exp {
+  position: relative;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: 30px;
+}
+
+section .text-exp .content {
+  position: relative;
+  padding: 10px 15px;
+  text-align: left;
+  color: black;
+}
+
+section .text-exp .content h2 {
+  color: #023539;
+}
+
+section .text-exp .content h4 {
+  font-size: 0.8em;
+  color: #075057;
+}
+
+section .container button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 40px;
+  margin-top: 90px;
+  cursor: pointer;
+  color: #cbfbff;
+  background: linear-gradient(90deg, rgba(7,70,75,1) 0%, rgba(13,111,124,1) 51%, rgba(25,154,167,1) 88%);
+}
+
+section .container button a {
+  color: #cbfbff;
+}
+
+section .container .text-s2i {
+  color: #075057;
+  margin-top: 90px;
+}
+
+/* Fine EXPERIENCE */
+
+/* Inizio CONTACT */
+
+.text-contact {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+  color: #0d6f7c;
+}
+
+section .contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .contact .contentt {
+  max-width: 800px;
+  align-items: center;
+}
+
+section .contact .contentt p {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+section .contact .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+section .contact .container .contactinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+section .contact .container .contactinfo .boxx {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+section .contact .container .contactinfo .boxx .text h3 {
+  color: #023539;
+}
+
+section .contact .container .contactinfo .boxx .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #d8fcff;
+  color: #023539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+section .contact .container .contactinfo .boxx .icon a {
+  color: #023539;
+  transition: color 0.3s ease;
+}
+
+section .contact .container .contactinfo .boxx .icon a:hover {
+  color: #0d6f7c;
+}
+
+section .contact .container .contactinfo .boxx .text {
+  display: flex;
+  margin: 10px;
+  font-size: 16px;
+  color: #023539;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+section .contact .container .contactinfo .boxx .text p {
+  color: rgba(75, 145, 153, 100);
+  transition: color 0.3s ease;
+}
+section .contact .container .contactinfo .boxx .text a p:hover {
+  color: #0d6f7c;
+}
+
+section .contact .contactform {
+  width: 40%;
+  padding: 40px;
+  background: #d8fcff;
+}
+
+section .contact .contactform h2 {
+  font-size: 30px;
+  color: #023539;
+  font-weight: 500;
+}
+
+section .contact .contactform .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+section .contact .contactform .inputBox input,
+section .contact .contactform .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #023539;
+  outline: none;
+  background: #d8fcff;
+  resize: none;
+}
+
+section .contact .contactform .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span {
+  color: #075057;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact .container .contactform .inputBox input[type="submit"] {
+  width: 100px;
+  background: linear-gradient(90deg, rgba(7,70,75,1) 0%, rgba(13,111,124,1) 51%, rgba(25,154,167,1) 88%);
+  color: #cbfbff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Fine CONTACT */
+
+/* Inizio MEDIA */
+
+@media (max-width: 370px) {
+  .container .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 240px;
+  }
+.container .card .imgBx img {
+  max-width: 90%;
+  border-radius: 5px;
+ }
+}
+
+@media (max-width: 425px) {
+
+  section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(128,240,255,1) 0%, rgba(153,245,255,1) 18%, rgba(170,248,255,1) 26%, rgba(194,248,255,1) 35%, rgba(203,251,255,1) 61%, rgba(206,251,255,1) 100%);
+      flex-wrap: wrap;
+      min-width: 100%;
+  }
+  section .container .row {
+    min-height: 80vh;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar .container .navbar-brand {
+    font-size: 0.9em;
+  }
+  .text-softskills{
+    padding: 50px;
+  }
+  .text-hardskills {
+    padding: 50px;
+  }
+  .text-experience{
+    padding: 50px;
+  }
+  .text-contact{
+    padding: 50px;
+  }
+
+  section .container .line {
+    position: absolute;
+    left: -9999px;
+  }
+  section .box {
+    max-width: 220px;
+    height: 320px;
+  }
+  section .box .content {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  section .box .content h2 {
+    font-size: 1.5em;
+  }
+  section .box .content p {
+    font-size: 0.9em;
+  }
+
+  section .container .card{
+    max-width: 270px;
+  }
+  section .container .card:hover {
+    height: 370px;
+  }
+  .container .card .imgBx img {
+    max-width: 90%;
+  }
+
+  section .container .card .content h2 {
+    font-size: 1.5em;
+  }
+  section .container .card .content p {
+    font-size: 0.9em;
+  }
+
+  section .container button {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  section .text-exp .content h2 {
+    font-size: 1.5em;
+  }
+  section .text-exp .content p {
+    font-size: 0.9em;
+  }
+  section .container .text-s2i h3 {
+    font-size: 1.4em;
+  }
+
+  section .contact {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section .contact .container .contactinfo{
+    width: 100%;
+  }
+  section .contact .container .contactinfo .boxx .icon {
+    min-width: 45px;
+    height: 45px;
+    font-size: 19px;
+  }
+  section .contact .container .contactinfo .boxx .text h3{
+    font-size: 1.2em;
+    text-align: left;
+}
+  section .contact .contactform {
+    width: 80%;
+    padding: 40px;
+    background: #d8fcff;
+  }
+  section .contact .contactform h2 {
+    font-size: 1.3em;
+  }
+  section .contact .contactform .inputBox span {
+    font-size: 0.8em;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  section .container .row {
+    flex-direction: column;
+  }
+  section .container .row .col p, h3 {
+    text-align: center;
+  }
+  section .container .row .col p {
+    padding-top: 180px;
+  }
+  section .container .row .col img {
+    width: 60%;
+    padding-top: -70px;
+  }
+  section .container .line {
+    padding-top: 80%;
+    font-size: 0.8em;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .contactinfo {
+    margin-bottom: 40px;
+  }
+  section .contact .container .contactinfo .boxx .text h3{
+  text-align: left;
+}
+  .contact .container .contactinfo,
+  .contact .container .contactform {
+    width: 100%;
+  }
+}
