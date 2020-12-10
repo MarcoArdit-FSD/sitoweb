@@ -1,3 +1,3 @@
 # sitoweb
-Sito di Ardit Marco
-.Spero che il mio sito vi piaccerà.
+Sito di Ardit Marco.
+Spero che il mio sito vi piaccerà.
